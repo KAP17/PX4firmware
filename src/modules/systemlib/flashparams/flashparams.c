@@ -55,8 +55,8 @@
 #include "flashparams.h"
 #include "flashfs.h"
 
-#if 0
-# define debug(fmt, args...)            do { warnx(fmt, ##args); } while(0)
+#if 1
+# define debug(fmt, args...)            do { PX4_WARN(fmt, ##args); } while(0)
 #else
 # define debug(fmt, args...)            do { } while(0)
 #endif
